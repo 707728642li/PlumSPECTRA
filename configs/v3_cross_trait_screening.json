@@ -1,0 +1,19 @@
+{
+  "protocol_version": "3.0.0",
+  "model_family": "PLUMRAC-X",
+  "frozen_model_config": "configs/v3_plumrac_x_frozen.json",
+  "screening_scope": "Frozen architecture transferred without trait-specific architecture or hyperparameter tuning",
+  "screening_traits": ["F6", "LS", "LW", "MFF", "PFD", "PRW", "SRF", "AF"],
+  "screening_outer_folds": "all 16 cultivars",
+  "screening_seed": 20260806,
+  "additional_seeds": [20260807, 20260808, 20260809],
+  "primary_metric": "cultivar-macro RMSE improvement versus the same fold-specific nested PLSR anchor",
+  "seed_expansion_rule": {
+    "macro_rmse_improvement_pct_gt": 1.0,
+    "pooled_rmse_improvement_pct_gt": 0.0,
+    "minimum_fold_wins": 6,
+    "maximum_worst_fold_degradation_pct": 3.0,
+    "logic": "all conditions must be met"
+  },
+  "claim_boundary": "Additional seeds quantify stability only. They do not permit changing architecture, input channels, loss, optimizer, gate, preprocessing, or the PLSR anchor. Traits failing the rule remain one-seed exploratory results."
+}

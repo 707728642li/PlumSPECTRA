@@ -1,0 +1,21 @@
+
+schema_version: plumspectra.release.v1
+project_name: PlumSPECTRA
+project_type: research_model_reproducibility
+version: 1.0.0-rc.1
+status: private_review_candidate
+repository: https://github.com/707728642li/PlumSPECTRA
+data_repository: https://github.com/707728642li/PlumSPECTRA-data
+model_repository: https://github.com/707728642li/PlumSPECTRA-models
+target_journal: Computers and Electronics in Agriculture
+authors: pending_author_confirmation
+code_license: pending_institutional_review
+data_license: pending_institutional_review
+model_license: pending_institutional_review
+concept_doi: null
+version_doi: null
+paper_doi: null
+primary_prediction_rows: 58206
+retained_cultivars: 15
+traits: 12
+outer_folds: 5

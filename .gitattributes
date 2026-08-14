@@ -1,0 +1,7 @@
+* text=auto
+*.parquet binary
+*.npy binary
+*.pt binary
+*.joblib binary
+*.png binary
+*.pdf binary

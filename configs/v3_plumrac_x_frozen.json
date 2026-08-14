@@ -1,0 +1,76 @@
+{
+  "freeze_version": "3.0.0",
+  "model_family": "PLUMRAC-X",
+  "model_full_name": "Plum Residual-Anchored Cross-cultivar eXpert",
+  "freeze_scope": "Architecture and training hyperparameters selected using RD on five prespecified development cultivars only",
+  "selection_trait": "RD",
+  "selection_target": "skin_break_displacement_raw_mean",
+  "development_cultivars": {
+    "L313": "3.13",
+    "CHL": "Cuihongli",
+    "KLD": "Konglongdan",
+    "WW": "Weiwang",
+    "WX": "Weixin"
+  },
+  "sealed_confirmation_cultivars": {
+    "L611": "6.11",
+    "LA191": "A181",
+    "FTL": "Fengtangli",
+    "FWHH": "Fengwei Huanghou",
+    "FRL": "Furongli",
+    "L31": "L31",
+    "NL": "Naili",
+    "QCL": "Qingcuili",
+    "WD": "Weidi",
+    "WJ": "Weijin",
+    "ZSKLD": "Zaoshu Konglongdan"
+  },
+  "architecture": {
+    "activation": "gelu",
+    "normalization": "group",
+    "channel_set": "basic",
+    "input_channels": ["raw_absorbance", "snv", "savitzky_golay_first_derivative"],
+    "width": 64,
+    "residual_blocks": 4,
+    "trainable_parameters": 336290,
+    "attention_tail": true,
+    "anchor_policy": "plsr"
+  },
+  "optimization": {
+    "dropout": 0.12,
+    "batch_size": 256,
+    "max_epochs": 40,
+    "min_epochs": 6,
+    "patience": 8,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.002,
+    "sampler_power": 1.0,
+    "augmentation": true,
+    "objective_profiles": ["absolute", "balanced", "ranking"],
+    "validation_cultivars": 5
+  },
+  "residual_gate": {
+    "min_improvement": 0.01,
+    "min_win_fraction": 1.0,
+    "max_worst_degradation": 0.0,
+    "max_gate": 0.5
+  },
+  "confirmation_seeds": [20260806, 20260807, 20260808, 20260809],
+  "primary_confirmation_metric": "cultivar-macro RMSE",
+  "development_result": {
+    "fold_wins_vs_plsr": "5/5",
+    "macro_plsr_rmse": 0.568186,
+    "macro_plumrac_x_rmse": 0.528353,
+    "macro_rmse_improvement_pct": 7.010515,
+    "pooled_plsr_rmse": 0.543292,
+    "pooled_plumrac_x_rmse": 0.511433,
+    "pooled_rmse_improvement_pct": 5.863968
+  },
+  "provenance_sha256": {
+    "src/train_plumrac_v3_variant.py": "dc7b782909c4d0c59d363b3ff96c69d4a23973170e82ba3a8d1c10eede19bf63",
+    "src/train_plumrac_loco.py": "2f9bba53a31c55fabcaaff2214dc201fe3a9b83973e861ad28d51dfec139467e",
+    "src/run_v3_optimization_suite.py": "076d1f47ccb54fd0bfaa2f4f703809f4bc246d9e0c492af22288f7e11ab628d9",
+    "results/v3/rd_optimization_suite/selection/variant_summary.csv": "8e9e2fb4f2b62c1330fac6c9c998d2a11e247775e1d71ccf2d4a4db667bb5cfd"
+  },
+  "claim_boundary": "No architecture, training-hyperparameter, or RD routing change is permitted after confirmation evaluation begins."
+}

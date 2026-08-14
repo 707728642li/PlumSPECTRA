@@ -1,0 +1,157 @@
+{
+  "protocol": "V25 external-review correction using corrected nested baselines and fold-internal residual gates",
+  "prediction_rows": 58206,
+  "fruits_texture": 4853,
+  "fruits_conventional": 4843,
+  "traits": 12,
+  "cultivars": 15,
+  "texture_recorded_gate_overrides_internal_count": 0,
+  "legacy_fixed_gate_differs_from_internal_count": 32,
+  "texture_crossfit_anchor_folds": [
+    4
+  ],
+  "quality_crossfit_anchor_folds": [
+    4
+  ],
+  "domain_pls_component_lower_boundary_count": 35,
+  "domain_pls_component_upper_boundary_count": 0,
+  "domain_pls_component_boundary_count_legacy_combined": 35,
+  "svr_C_boundary_count": 0,
+  "svr_gamma_boundary_count": 0,
+  "svr_epsilon_boundary_count": 0,
+  "multiplicity": {
+    "iterations": 1000000,
+    "seed": 20260810,
+    "shared_resampling_matrix": true,
+    "cultivar_clusters": 15,
+    "contrasts": 36,
+    "supported_raw": 34,
+    "supported_bh_fdr": 34,
+    "supported_holm": 34,
+    "supported_simultaneous": 26,
+    "simultaneous_method": "max-|studentized bootstrap deviation| family-wise 95% confidence intervals across all 36 contrasts",
+    "baseline_specific_12_contrast_family_sensitivity": {
+      "Global PLSR": {
+        "contrasts": 12,
+        "supported_raw": 12,
+        "supported_bh_fdr": 12,
+        "supported_holm": 12,
+        "supported_simultaneous": 12,
+        "simultaneous_critical_value": 2.877716064453125
+      },
+      "Cultivar-aware PLSR": {
+        "contrasts": 12,
+        "supported_raw": 12,
+        "supported_bh_fdr": 12,
+        "supported_holm": 12,
+        "supported_simultaneous": 10,
+        "simultaneous_critical_value": 3.150252103805542
+      },
+      "Nested RBF-SVR": {
+        "contrasts": 12,
+        "supported_raw": 10,
+        "supported_bh_fdr": 10,
+        "supported_holm": 10,
+        "supported_simultaneous": 8,
+        "simultaneous_critical_value": 2.9162724018096924
+      }
+    },
+    "posthoc_strongest_baseline_12_contrast_family": {
+      "eligible_baselines": [
+        "Global PLSR",
+        "Cultivar-aware PLSR",
+        "Nested RBF-SVR",
+        "No-neural B50"
+      ],
+      "contrasts": 12,
+      "supported_raw": 10,
+      "supported_bh_fdr": 10,
+      "supported_holm": 10,
+      "supported_simultaneous": 8,
+      "simultaneous_critical_value": 2.8638789653778076,
+      "warning": "Comparator selection and this 12-contrast family were defined post hoc as a conservative external-review sensitivity analysis."
+    },
+    "family_definition_warning": "The 36-contrast and three 12-contrast families are analysis-stage definitions, not preregistered families.",
+    "warning": "Cultivar-cluster resampling protects within-cultivar dependence; 15 clusters still limit population-level generalization."
+  },
+  "endpoint_structure": {
+    "complete_fruits": 4853,
+    "pc1_variance_pct": 74.43700897489697,
+    "first_3_pc_variance_pct": 95.36807106486968,
+    "participation_ratio": 1.7292124397969855,
+    "pairs_abs_r_above_0_90": 4
+  },
+  "qc_batch_reliability": {
+    "icc_range_modeling_cohort": [
+      0.800678870147499,
+      0.9839207627498306
+    ],
+    "median_cv_range_modeling_cohort": [
+      0.03545556690967194,
+      0.17204533024269597
+    ],
+    "single_batch_cultivars": 13,
+    "multi_batch_cultivars": 2,
+    "cultivar_611_spectral_quality_fraction": 0.0
+  },
+  "cohort_sensitivity": {
+    "primary_complete_texture_fruits_before_whole_cultivar_exclusion": 4967,
+    "cultivar_611_primary_complete_texture_fruits": 114,
+    "retaining_611_requires_new_split_and_full_refit": true,
+    "stricter_subset_fruits": 4238,
+    "stricter_subset_cultivars": 13
+  },
+  "fewshot": {
+    "fruits": 1256,
+    "traits": 9,
+    "batches": 5,
+    "models": [
+      "Global PLSR",
+      "Cultivar-aware PLSR",
+      "Nested RBF-SVR",
+      "Residual CNN",
+      "Deep-kernel ensemble",
+      "Batch-mean null (no spectra)"
+    ],
+    "shots": [
+      0,
+      5,
+      10,
+      20,
+      40,
+      80
+    ],
+    "repeats": 500,
+    "adapters": [
+      "intercept",
+      "shrunken_affine"
+    ],
+    "slope_prior_strength": 20.0,
+    "fairness": "identical deterministic calibration fruits across models and adapters; calibration fruits excluded from evaluation",
+    "inference_warning": "Five observed batches from two cultivars; intervals quantify calibration-subsampling sensitivity, not population-wide biological replication."
+  },
+  "heldbatch_claim_audit": {
+    "traits": 9,
+    "zero_shot_ai_worse_than_global_batch_macro": 5,
+    "shot40_ai_worse_than_batch_mean_null_pooled": 2,
+    "shot40_ai_worse_than_batch_mean_null_batch_macro": 2,
+    "shot40_ai_median_pooled_r2": 0.1870827686585456,
+    "shot40_null_median_pooled_r2": 0.1637415067497532
+  },
+  "equal_information_pls2": {
+    "common_fruits": 4843,
+    "prediction_rows": 58116,
+    "supported_outperformance": 11,
+    "supported_inferiority": 0,
+    "statistical_parity": 1
+  },
+  "within_cultivar_signal": {
+    "negative_centered_r2_traits": [],
+    "negative_centered_r2_trait_count": 0,
+    "cultivar_trait_cells": 180,
+    "negative_cultivar_pearson_cells": 9,
+    "negative_cultivar_r2_cells": 53
+  },
+  "test_labels_used_for_selection": false,
+  "claim_boundary": "same-session interpolation among 15 registered cultivars; external batch and unseen-cultivar transfer are separate negative/sensitivity analyses"
+}

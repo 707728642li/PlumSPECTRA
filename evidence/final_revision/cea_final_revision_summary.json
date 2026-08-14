@@ -1,0 +1,23 @@
+{
+  "bootstrap_iterations": 1000000,
+  "bootstrap_seed": 20260808,
+  "cultivar_clusters": 15,
+  "eligible_branch_excluded_baselines": [
+    "Global PLSR",
+    "Cultivar-aware PLSR",
+    "No-neural B50"
+  ],
+  "gain_range_pct": [
+    0.8619241957778265,
+    4.010746039465047
+  ],
+  "baseline_counts": {
+    "No-neural B50": 11,
+    "Cultivar-aware PLSR": 1
+  },
+  "supported_raw": 12,
+  "supported_bh_fdr": 12,
+  "supported_holm": 12,
+  "supported_simultaneous": 12,
+  "global_pls_worse_than_cultivar_mean_null": 11
+}

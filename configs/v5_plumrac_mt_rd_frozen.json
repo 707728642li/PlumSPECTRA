@@ -1,0 +1,77 @@
+{
+  "model": "PLUMRAC-MT V5",
+  "frozen_on": "2026-08-07",
+  "selection_evidence": "results/v5/auxpretrain_suite/selection/selection_decision.json",
+  "primary_trait": "skin_break_displacement_raw_mean",
+  "trait_abbreviation": "RD",
+  "final_model_outputs": 1,
+  "one_trait_per_final_model": true,
+  "cohort": "analysis",
+  "model_independent_excluded_cultivars": [
+    "6.11"
+  ],
+  "auxiliary_pretraining": {
+    "source_cultivars_only": true,
+    "targets": [
+      "skin_break_force_g_mean",
+      "skin_break_displacement_raw_mean",
+      "skin_break_drop_g_mean",
+      "flesh_force_mean_g_mean",
+      "force_at_6_rawpos_g_mean",
+      "loading_stiffness_g_per_rawpos_mean",
+      "loading_work_g_rawpos_mean",
+      "post_break_work_g_rawpos_mean",
+      "adhesive_force_g_mean",
+      "fruit_weight_g",
+      "soluble_solids_pct",
+      "ph"
+    ],
+    "epochs": 12,
+    "learning_rate": 0.001,
+    "weight_decay": 0.001,
+    "auxiliary_head_discarded_before_final_model": true
+  },
+  "final_encoder": {
+    "channels": [
+      "raw_absorbance",
+      "standard_normal_variate",
+      "savitzky_golay_first_derivative_window_11"
+    ],
+    "architecture": "multiscale_depthwise_residual_cnn",
+    "kernels": [
+      3,
+      9,
+      21
+    ],
+    "width": 48,
+    "blocks": 4,
+    "trainable_parameters": 142285
+  },
+  "fine_tuning": {
+    "objective_profiles": [
+      "balanced"
+    ],
+    "dropout": 0.12,
+    "batch_size": 256,
+    "maximum_epochs": 32,
+    "minimum_epochs": 6,
+    "patience": 6,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.002,
+    "sampler_power": 1.0,
+    "validation_cultivars": 5
+  },
+  "residual_gate": {
+    "candidates": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "minimum_improvement": 0.0025,
+    "minimum_win_fraction": 0.6,
+    "maximum_worst_degradation": 0.03
+  },
+  "claim_boundary": "Retrospective nested-LOCO evidence; every auxiliary and target label, preprocessing statistic, early-stopping decision, and gate decision excludes the held-out cultivar."
+}

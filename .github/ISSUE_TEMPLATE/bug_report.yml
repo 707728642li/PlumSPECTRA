@@ -1,0 +1,10 @@
+name: Reproducibility defect
+description: Report a code, evidence or documentation defect
+title: '[defect] '
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+    validations:
+      required: true

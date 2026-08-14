@@ -1,0 +1,16 @@
+project_name: nirs_plum_cross_cultivar
+source_dataset: ../NIRs_plums_clean_en_v1.0.0
+source_arc_guide: ../NIRs_plums/ARC质构仪数据通用解析说明.md
+random_seed: 20260806
+primary_input: nir_absorbance_900_1700_nm
+primary_targets:
+  - soluble_solids_pct
+  - ph
+secondary_targets:
+  - fruit_weight_g
+  - texture_features
+primary_outer_validation: leave_one_cultivar_out
+inner_validation: cultivar_grouped
+deployment_requires_cultivar_label: false
+texture_role: destructive_reference_and_training_auxiliary
+arc_parser_version: 0.1.0

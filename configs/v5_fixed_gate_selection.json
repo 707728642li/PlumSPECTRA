@@ -1,0 +1,53 @@
+{
+  "model": "PLUMRAC-MT V5.1",
+  "selection_scope": "V5 quality12_e12 historical development suite; source-validation predictions only",
+  "development_cultivars": [
+    "3.13",
+    "Cuihongli",
+    "Konglongdan",
+    "Weiwang",
+    "Weixin"
+  ],
+  "aggregation": "unweighted mean across the five nested source-validation fits",
+  "primary_criterion": "minimum mean selection_score",
+  "gate_candidates": [
+    {
+      "gate": 0.0,
+      "mean_selection_score": 0.8681599363,
+      "mean_relative_improvement": 0.0,
+      "mean_win_fraction": 0.0,
+      "mean_worst_improvement": 0.0
+    },
+    {
+      "gate": 0.25,
+      "mean_selection_score": 0.856663393,
+      "mean_relative_improvement": 0.0135766228,
+      "mean_win_fraction": 0.92,
+      "mean_worst_improvement": -0.0029504591
+    },
+    {
+      "gate": 0.5,
+      "mean_selection_score": 0.8514373663,
+      "mean_relative_improvement": 0.0199047051,
+      "mean_win_fraction": 0.8,
+      "mean_worst_improvement": -0.0141183508
+    },
+    {
+      "gate": 0.75,
+      "mean_selection_score": 0.8526769355,
+      "mean_relative_improvement": 0.0187680611,
+      "mean_win_fraction": 0.72,
+      "mean_worst_improvement": -0.0347010163
+    },
+    {
+      "gate": 1.0,
+      "mean_selection_score": 0.8602810471,
+      "mean_relative_improvement": 0.0102966521,
+      "mean_win_fraction": 0.6,
+      "mean_worst_improvement": -0.0634772532
+    }
+  ],
+  "selected_gate": 0.5,
+  "target_test_predictions_used": false,
+  "claim_boundary": "Retrospective development evidence; not an untouched external selection exercise."
+}

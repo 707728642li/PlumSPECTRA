@@ -1,0 +1,10 @@
+
+[project]
+name = "plumspectra-reproducibility"
+version = "1.0.0-rc.1"
+description = "Frozen analyses and evidence for cultivar-aware plum NIR quality prediction"
+requires-python = ">=3.11"
+dependencies = ["numpy", "pandas", "pyarrow", "scikit-learn", "pyyaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,100 @@
+model,trait,adapter,minimum_shots_strict,minimum_shots_directional,strict_definition
+Batch-mean null (no spectra),AF,batch_mean_null,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Batch-mean null (no spectra),F6,batch_mean_null,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Batch-mean null (no spectra),LS,batch_mean_null,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Batch-mean null (no spectra),LW,batch_mean_null,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Batch-mean null (no spectra),MFF,batch_mean_null,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Batch-mean null (no spectra),PFD,batch_mean_null,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Batch-mean null (no spectra),PRW,batch_mean_null,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Batch-mean null (no spectra),RD,batch_mean_null,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Batch-mean null (no spectra),SRF,batch_mean_null,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Cultivar-aware PLSR,AF,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Cultivar-aware PLSR,AF,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Cultivar-aware PLSR,F6,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Cultivar-aware PLSR,F6,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Cultivar-aware PLSR,LS,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Cultivar-aware PLSR,LS,shrunken_affine,,80.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Cultivar-aware PLSR,LW,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Cultivar-aware PLSR,LW,shrunken_affine,,40.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Cultivar-aware PLSR,MFF,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Cultivar-aware PLSR,MFF,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Cultivar-aware PLSR,PFD,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Cultivar-aware PLSR,PFD,shrunken_affine,,80.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Cultivar-aware PLSR,PRW,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Cultivar-aware PLSR,PRW,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Cultivar-aware PLSR,RD,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Cultivar-aware PLSR,RD,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Cultivar-aware PLSR,SRF,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Cultivar-aware PLSR,SRF,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Deep-kernel ensemble,AF,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Deep-kernel ensemble,AF,shrunken_affine,,80.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Deep-kernel ensemble,F6,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Deep-kernel ensemble,F6,shrunken_affine,,40.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Deep-kernel ensemble,LS,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Deep-kernel ensemble,LS,shrunken_affine,,80.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Deep-kernel ensemble,LW,intercept,,80.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Deep-kernel ensemble,LW,shrunken_affine,80.0,40.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Deep-kernel ensemble,MFF,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Deep-kernel ensemble,MFF,shrunken_affine,,80.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Deep-kernel ensemble,PFD,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Deep-kernel ensemble,PFD,shrunken_affine,,80.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Deep-kernel ensemble,PRW,intercept,,80.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Deep-kernel ensemble,PRW,shrunken_affine,,40.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Deep-kernel ensemble,RD,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Deep-kernel ensemble,RD,shrunken_affine,,80.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Deep-kernel ensemble,SRF,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Deep-kernel ensemble,SRF,shrunken_affine,,80.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Global PLSR,AF,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Global PLSR,AF,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Global PLSR,F6,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Global PLSR,F6,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Global PLSR,LS,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Global PLSR,LS,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Global PLSR,LW,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Global PLSR,LW,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Global PLSR,MFF,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Global PLSR,MFF,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Global PLSR,PFD,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Global PLSR,PFD,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Global PLSR,PRW,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Global PLSR,PRW,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Global PLSR,RD,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Global PLSR,RD,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Global PLSR,SRF,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Global PLSR,SRF,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Nested RBF-SVR,AF,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Nested RBF-SVR,AF,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Nested RBF-SVR,F6,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Nested RBF-SVR,F6,shrunken_affine,80.0,40.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Nested RBF-SVR,LS,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Nested RBF-SVR,LS,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Nested RBF-SVR,LW,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Nested RBF-SVR,LW,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Nested RBF-SVR,MFF,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Nested RBF-SVR,MFF,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Nested RBF-SVR,PFD,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Nested RBF-SVR,PFD,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Nested RBF-SVR,PRW,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Nested RBF-SVR,PRW,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Nested RBF-SVR,RD,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Nested RBF-SVR,RD,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Nested RBF-SVR,SRF,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Nested RBF-SVR,SRF,shrunken_affine,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Residual CNN,AF,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Residual CNN,AF,shrunken_affine,,80.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Residual CNN,F6,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Residual CNN,F6,shrunken_affine,,80.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Residual CNN,LS,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Residual CNN,LS,shrunken_affine,,80.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Residual CNN,LW,intercept,,40.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Residual CNN,LW,shrunken_affine,80.0,40.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Residual CNN,MFF,intercept,,40.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Residual CNN,MFF,shrunken_affine,,40.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Residual CNN,PFD,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Residual CNN,PFD,shrunken_affine,,80.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Residual CNN,PRW,intercept,,40.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Residual CNN,PRW,shrunken_affine,80.0,20.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Residual CNN,RD,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Residual CNN,RD,shrunken_affine,,80.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Residual CNN,SRF,intercept,,,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0
+Residual CNN,SRF,shrunken_affine,,80.0,batch-macro R2 2.5th percentile > 0 and RMSE-gain 2.5th percentile > 0

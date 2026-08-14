@@ -1,0 +1,4 @@
+sample_id,field,source_value,corrected_value,reason
+611_A117_B01-0020,soluble_solids_pct,14.1.,14.1,trailing_duplicate_decimal_point
+FWHH_B01-0021,soluble_solids_pct,16..2,16.2,duplicate_decimal_point
+KLD_B03-0183,ph,.4.48,4.48,leading_duplicate_decimal_point

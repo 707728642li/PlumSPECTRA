@@ -1,0 +1,23 @@
+{
+  "label": "manuscript",
+  "status": "PASS",
+  "docx": "D:\\00_Codex_dir\\02_AI_project\\04_AI_orchard\\NIRs_plum_AI_research\\manuscript\\cea_v29_submission\\PlumSPECTRA_CEA_manuscript_revised.docx",
+  "pdf": "D:\\00_Codex_dir\\02_AI_project\\04_AI_orchard\\NIRs_plum_AI_research\\results\\cea_final_revision\\docx_qa3\\manuscript\\PlumSPECTRA_CEA_manuscript_revised.pdf",
+  "pages": 23,
+  "tables": 0,
+  "images": 6,
+  "checks": {
+    "docx_exists": true,
+    "pdf_exists": true,
+    "letter_page": true,
+    "one_inch_margins": true,
+    "table_count": true,
+    "image_count": true,
+    "pdf_page_count": true,
+    "table_widths": true,
+    "table_indents": true,
+    "no_exact_row_heights": true,
+    "no_revision_history": true,
+    "no_unresolved_markers": true
+  }
+}

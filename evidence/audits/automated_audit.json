@@ -1,0 +1,379 @@
+{
+  "release": "CEA submission revision",
+  "passed": 65,
+  "total": 65,
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "abstract_at_most_250_words",
+      "passed": true,
+      "evidence": 245
+    },
+    {
+      "name": "six_keywords",
+      "passed": true,
+      "evidence": 6
+    },
+    {
+      "name": "three_to_five_highlights",
+      "passed": true,
+      "evidence": 5
+    },
+    {
+      "name": "highlights_at_most_85_characters",
+      "passed": true,
+      "evidence": [
+        70,
+        68,
+        62,
+        76,
+        56
+      ]
+    },
+    {
+      "name": "imrad_and_endmatter_order",
+      "passed": true,
+      "evidence": [
+        2113,
+        5173,
+        15915,
+        27346,
+        32405,
+        33291,
+        34982,
+        46917
+      ]
+    },
+    {
+      "name": "no_numeric_bracket_citations",
+      "passed": true,
+      "evidence": "author-year citations"
+    },
+    {
+      "name": "no_old_target_journal_name",
+      "passed": true,
+      "evidence": "absent"
+    },
+    {
+      "name": "no_old_release_labels",
+      "passed": true,
+      "evidence": "clean title block"
+    },
+    {
+      "name": "no_revision_history_leaks",
+      "passed": true,
+      "evidence": "absent"
+    },
+    {
+      "name": "branch_excluded_claim",
+      "passed": true,
+      "evidence": "present"
+    },
+    {
+      "name": "global_pls_null_context",
+      "passed": true,
+      "evidence": "present"
+    },
+    {
+      "name": "key_tables_rendered",
+      "passed": true,
+      "evidence": 7
+    },
+    {
+      "name": "no_arbitrary_five_percent_claim",
+      "passed": true,
+      "evidence": "absent"
+    },
+    {
+      "name": "figure_1_cited",
+      "passed": true,
+      "evidence": "Fig. 1"
+    },
+    {
+      "name": "figure_1_legend",
+      "passed": true,
+      "evidence": 1
+    },
+    {
+      "name": "figure_2_cited",
+      "passed": true,
+      "evidence": "Fig. 2"
+    },
+    {
+      "name": "figure_2_legend",
+      "passed": true,
+      "evidence": 1
+    },
+    {
+      "name": "figure_3_cited",
+      "passed": true,
+      "evidence": "Fig. 3"
+    },
+    {
+      "name": "figure_3_legend",
+      "passed": true,
+      "evidence": 1
+    },
+    {
+      "name": "figure_4_cited",
+      "passed": true,
+      "evidence": "Fig. 4"
+    },
+    {
+      "name": "figure_4_legend",
+      "passed": true,
+      "evidence": 1
+    },
+    {
+      "name": "figure_5_cited",
+      "passed": true,
+      "evidence": "Fig. 5"
+    },
+    {
+      "name": "figure_5_legend",
+      "passed": true,
+      "evidence": 1
+    },
+    {
+      "name": "figure_6_cited",
+      "passed": true,
+      "evidence": "Fig. 6"
+    },
+    {
+      "name": "figure_6_legend",
+      "passed": true,
+      "evidence": 1
+    },
+    {
+      "name": "six_alt_text_blocks",
+      "passed": true,
+      "evidence": 6
+    },
+    {
+      "name": "supplement_s25_declared",
+      "passed": true,
+      "evidence": "present"
+    },
+    {
+      "name": "supplement_s42_declared",
+      "passed": true,
+      "evidence": "present"
+    },
+    {
+      "name": "s25_png_exists",
+      "passed": true,
+      "evidence": "PNG"
+    },
+    {
+      "name": "s25_pdf_exists",
+      "passed": true,
+      "evidence": "PDF"
+    },
+    {
+      "name": "main_figure_unchanged_Figure_1_v26",
+      "passed": true,
+      "evidence": "f5490fa2a03b83716b674b3d04653a3757cc0004bd367a6db3067316106ea45c"
+    },
+    {
+      "name": "main_figure_unchanged_Figure_1_v26",
+      "passed": true,
+      "evidence": "fe0c33a890791a27a93caeaf2a632723266a49ccf56a1edc96bb25371e69993a"
+    },
+    {
+      "name": "main_figure_unchanged_Figure_2_v26",
+      "passed": true,
+      "evidence": "e584f84753031b94abf0bf68fc2508eec0ff2299c1d3ad3136290cea2d70cce6"
+    },
+    {
+      "name": "main_figure_unchanged_Figure_2_v26",
+      "passed": true,
+      "evidence": "83ea337b6f3e832f4b7a4fedc3dd945be6548ac26e9a820ca32fc6b80e8e1dbf"
+    },
+    {
+      "name": "main_figure_unchanged_Figure_3_v26",
+      "passed": true,
+      "evidence": "327c7af003290475c06d357fd80b95454ae5659fd3527821b43af4d2abc6e0f9"
+    },
+    {
+      "name": "main_figure_unchanged_Figure_3_v26",
+      "passed": true,
+      "evidence": "2a98cb7d0792bde6a268223e2c3557dce6a13730d049f2185e5722a638321ffb"
+    },
+    {
+      "name": "main_figure_unchanged_Figure_4_v26",
+      "passed": true,
+      "evidence": "7aac77cf50273df9224f212952d19c69c4ea1d9faad37591fcbf5f7fce29e4e9"
+    },
+    {
+      "name": "main_figure_unchanged_Figure_4_v26",
+      "passed": true,
+      "evidence": "92e33bd91e35455dead08e4983d14d86a296e608ffbf5daea88dca4c8d6b8541"
+    },
+    {
+      "name": "main_figure_unchanged_Figure_5_v26",
+      "passed": true,
+      "evidence": "110a787066570a9a4daae4e43baeed18eaa5d853b39304e84bc0c6f62111dad6"
+    },
+    {
+      "name": "main_figure_unchanged_Figure_5_v26",
+      "passed": true,
+      "evidence": "7b5353cc2bca0521ba5064f7e30dc297f232e7b5e14bb0f0b96efef3bbd7af96"
+    },
+    {
+      "name": "main_figure_unchanged_Figure_6_v26",
+      "passed": true,
+      "evidence": "e6c9f0c90c2abf6d643a8bd3950858aae1f0b59b747798f468075cee3109c6dc"
+    },
+    {
+      "name": "main_figure_unchanged_Figure_6_v26",
+      "passed": true,
+      "evidence": "f9ce23ec89a7792318f55be5ec2e08f826c0b31eb2add7ff89a67179ab45475a"
+    },
+    {
+      "name": "oof_row_count",
+      "passed": true,
+      "evidence": 58206
+    },
+    {
+      "name": "oof_unique_fruit_trait",
+      "passed": true,
+      "evidence": 58206
+    },
+    {
+      "name": "twelve_traits",
+      "passed": true,
+      "evidence": [
+        "AF",
+        "F6",
+        "FW",
+        "LS",
+        "LW",
+        "MFF",
+        "PFD",
+        "PRW",
+        "RD",
+        "SRF",
+        "SSC",
+        "pH"
+      ]
+    },
+    {
+      "name": "five_outer_folds",
+      "passed": true,
+      "evidence": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "name": "no_missing_final_predictions",
+      "passed": true,
+      "evidence": 0
+    },
+    {
+      "name": "final_metric_rows",
+      "passed": true,
+      "evidence": 12
+    },
+    {
+      "name": "fruit_weight_r2",
+      "passed": true,
+      "evidence": 0.8274568875155444
+    },
+    {
+      "name": "ssc_r2",
+      "passed": true,
+      "evidence": 0.6288277712376654
+    },
+    {
+      "name": "ph_r2",
+      "passed": true,
+      "evidence": 0.5436478807102778
+    },
+    {
+      "name": "texture_r2_range",
+      "passed": true,
+      "evidence": [
+        0.5017140059107801,
+        0.7188167007324616
+      ]
+    },
+    {
+      "name": "branch_excluded_family_twelve_traits",
+      "passed": true,
+      "evidence": 12
+    },
+    {
+      "name": "branch_excluded_gain_range",
+      "passed": true,
+      "evidence": {
+        "min": 0.8619241957778265,
+        "max": 4.010746039465047
+      }
+    },
+    {
+      "name": "branch_excluded_simultaneous_support",
+      "passed": true,
+      "evidence": 12
+    },
+    {
+      "name": "practical_context_twelve_traits",
+      "passed": true,
+      "evidence": 12
+    },
+    {
+      "name": "texture_within_half_iqr_range",
+      "passed": true,
+      "evidence": {
+        "min": 70.76035441994642,
+        "max": 83.80383268081599
+      }
+    },
+    {
+      "name": "deployment_model_card_exists",
+      "passed": true,
+      "evidence": "Table S42"
+    },
+    {
+      "name": "loco_prediction_count",
+      "passed": true,
+      "evidence": 43677
+    },
+    {
+      "name": "held_batch_summary_exists",
+      "passed": true,
+      "evidence": "present"
+    },
+    {
+      "name": "multiseed_summary_exists",
+      "passed": true,
+      "evidence": "present"
+    },
+    {
+      "name": "reference_count_30",
+      "passed": true,
+      "evidence": 30
+    },
+    {
+      "name": "unique_reference_dois",
+      "passed": true,
+      "evidence": [
+        30,
+        30
+      ]
+    },
+    {
+      "name": "cea_references_present",
+      "passed": true,
+      "evidence": 3
+    },
+    {
+      "name": "manuscript_body_reported",
+      "passed": true,
+      "evidence": 6832
+    }
+  ]
+}

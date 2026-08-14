@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "abstract_words": 245,
+  "sentence_count": 370,
+  "negative_tail_count": 20,
+  "negative_tail_fraction": 0.05405405405405406,
+  "therefore_count": 5,
+  "duplicated_internal_8grams": 11,
+  "revision_leaks": [],
+  "results_headings": [
+    "Cohort assembly and identity reconciliation",
+    "Texture endpoint reliability and correlation structure",
+    "Model configuration and training-internal selection",
+    "Baseline search coverage",
+    "Out-of-fold accuracy and comparison with baselines",
+    "Optimisation stability across complete-pipeline seeds",
+    "Cultivar-centred performance and the cultivar-mean null",
+    "Wavelength association analysis",
+    "Held-batch and unseen-cultivar transfer"
+  ],
+  "required_claims_present": {
+    "weaker than a spectrum-free cultivar-mean predictor for 11 of 12 traits": true,
+    "0.9–4.0%": true,
+    "FW, F6, LS and LW": true,
+    "95.4%": true,
+    "0.14–0.28": true,
+    "OpenAI Codex and Anthropic Claude Code": true
+  },
+  "supplement_rendered_table_count": 92
+}

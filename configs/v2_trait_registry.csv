@@ -1,0 +1,16 @@
+target,abbreviation,publication_label,unit,model_family,priority
+skin_break_force_g_mean,SRF,Maximum penetration force,gf,endpoint,primary
+skin_break_displacement_raw_mean,RD,Registered-event position,archive position unit,endpoint,primary
+skin_break_drop_g_mean,PFD,Registered post-event force drop,gf,endpoint,secondary
+flesh_force_mean_g_mean,MFF,Mean flesh force,gf,endpoint,primary
+force_at_6_rawpos_g_mean,F6,Force at 6 archive position units,gf,endpoint,secondary
+loading_stiffness_g_per_rawpos_mean,LS,Loading stiffness,gf per archive position unit,endpoint,primary
+loading_work_g_rawpos_mean,LW,Loading work,gf × archive position unit,endpoint,secondary
+post_break_work_g_rawpos_mean,PRW,Registered post-event work,gf × archive position unit,endpoint,secondary
+adhesive_force_g_mean,AF,Adhesive force,gf,endpoint,primary
+axis_flesh_resistance_energy,FRE,Flesh resistance-energy,a.u.,mechanical_axis,primary
+axis_deformation_compliance,DC,Deformation-compliance,a.u.,mechanical_axis,primary
+axis_skin_rupture_resistance,SRR,Skin rupture resistance,a.u.,mechanical_axis,primary
+fruit_weight_g,FW,Fruit weight,g,conventional_trait,context
+soluble_solids_pct,SSC,Soluble solids content,%,conventional_trait,context
+ph,pH,pH,,conventional_trait,context

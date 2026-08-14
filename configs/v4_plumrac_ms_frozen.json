@@ -1,0 +1,57 @@
+{
+  "model": "PLUMRAC-MS V4",
+  "frozen_on": "2026-08-07",
+  "selection_evidence": "results/v4/rd_phy_suite/selection/selection_decision.json",
+  "primary_trait": "skin_break_displacement_raw_mean",
+  "trait_abbreviation": "RD",
+  "one_trait_per_model": true,
+  "cohort": "analysis",
+  "model_independent_excluded_cultivars": [
+    "6.11"
+  ],
+  "cultivar_exclusion_evidence": "results/v4/cultivar_quality_audit/cultivar_exclusion_decision.json",
+  "channel_set": "basic",
+  "input_views": [
+    "raw_absorbance",
+    "standard_normal_variate",
+    "savitzky_golay_first_derivative_window_11"
+  ],
+  "architecture": "multiscale_depthwise_residual_cnn",
+  "multiscale_kernels": [
+    3,
+    9,
+    21
+  ],
+  "width": 48,
+  "blocks": 4,
+  "trainable_parameters": 142285,
+  "activation": "GELU",
+  "normalization": "GroupNorm",
+  "dropout": 0.12,
+  "mixstyle_probability": 0.0,
+  "batch_size": 256,
+  "maximum_epochs": 32,
+  "minimum_epochs": 6,
+  "patience": 6,
+  "learning_rate": 0.0005,
+  "weight_decay": 0.002,
+  "sampler_power": 1.0,
+  "objective_profiles": [
+    "absolute",
+    "balanced"
+  ],
+  "validation_cultivars": 5,
+  "residual_gate_candidates": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "minimum_gate_improvement": 0.0025,
+  "minimum_gate_win_fraction": 0.6,
+  "maximum_gate_worst_degradation": 0.03,
+  "maximum_residual_gate": 1.0,
+  "validation": "nested leave-one-cultivar-out with source-only epoch/profile/gate selection and full outer-source refit",
+  "claim_boundary": "Retrospective nested-LOCO confirmation; all cultivars were exposed during earlier V3 work. No held-out cultivar enters its fold's preprocessing, PLSR selection, deep training, epoch/profile selection, or gate selection."
+}
