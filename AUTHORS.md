@@ -1,3 +1,4 @@
 # Authors
 
-Withheld for private peer review. The final author list and order are pending author confirmation.
+The final author list, order, affiliations and ORCID identifiers are pending author
+confirmation. This release candidate therefore uses provisional group authorship.

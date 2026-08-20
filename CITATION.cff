@@ -1,11 +1,11 @@
 
 cff-version: 1.2.0
-message: "Author names are withheld in this private review candidate and will be restored before public release."
+message: "Provisional citation metadata: replace the group author with the confirmed author list before the archival release."
 title: "PlumSPECTRA reproducibility code and frozen evidence"
 type: software
 version: "1.0.0-rc.1"
 date-released: "2026-08-14"
 authors:
-  - name: "Anonymous authors for peer review"
+  - name: "PlumSPECTRA authors (provisional)"
 repository-code: "https://github.com/707728642li/PlumSPECTRA"
 abstract: "Code, frozen predictions and audit material for cross-cultivar NIR prediction of plum quality and texture."

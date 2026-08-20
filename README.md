@@ -37,15 +37,15 @@ leave-one-cultivar-out transfer failed for every texture endpoint.
 
 - `analysis/`: analysis, training and audit scripts retained for provenance.
 - `configs/`: cultivar, trait and model registries.
-- `docs/Figure_1.png`: authorised study-design and cohort figure.
-- `docs/Figure_3.png`: authorised model-architecture figure.
+- `docs/Figure_1.png`: authorized study-design and cohort figure.
+- `docs/Figure_3.png`: authorized model-architecture figure.
 - `evidence/`: frozen predictions, metric tables and audit outputs.
 - `tools/audit_release.py`: repository integrity and privacy audit.
 - `tests/`: clean-environment checks for the frozen evidence.
 
 Manuscript files, all other publication figures and figure-specific source data are
 intentionally excluded. Figures 1 and 3 are the only manuscript-derived images
-authorised for this repository.
+authorized for this repository.
 
 Related public repositories:
 
