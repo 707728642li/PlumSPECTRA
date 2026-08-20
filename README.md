@@ -1,14 +1,16 @@
 
 # PlumSPECTRA
 
-Private peer-review repository for a cultivar-aware near-infrared framework that
+Public reproducibility repository for a cultivar-aware near-infrared framework that
 predicts fruit weight, soluble solids content, pH and nine mechanical texture
 endpoints from intact plums.
 
-> **Review status:** private `1.0.0-rc.1`. Author metadata, public licenses, DOI
-> records and final deployment weights are deliberately not claimed as complete.
+> **Release status:** public `1.0.0-rc.1`. The version DOI, reuse licenses and final
+> deployment weights are not yet claimed as complete.
 
-![Study and modelling overview](paper/figures/Figure_1.png)
+## Study design and retained cohort
+
+![Figure 1. Study design and retained cohort](docs/Figure_1.png)
 
 ## What is frozen
 
@@ -27,29 +29,25 @@ domain. It is not external orchard, year, instrument or unseen-cultivar validati
 Five held batches from two cultivars support labelled adaptation only; zero-shot
 leave-one-cultivar-out transfer failed for every texture endpoint.
 
-```mermaid
-flowchart LR
-  A["228-band intact-fruit NIR"] --> B["Fold-safe preprocessing"]
-  B --> C["Cultivar-aware PLS anchor"]
-  B --> D["Trait-specific residual CNN"]
-  B --> E["Nested RBF-SVR expert"]
-  C --> F["Training-internal branch selection"]
-  D --> F
-  E --> F
-  F --> G["12 continuous quality and texture outputs"]
-  G --> H["Frozen OOF predictions and cultivar-cluster inference"]
-```
+## Model architecture and leakage controls
+
+![Figure 3. PlumSPECTRA architecture and leakage controls](docs/Figure_3.png)
 
 ## Repository map
 
-- `analysis/`: analysis, training, figure and audit scripts retained for provenance.
+- `analysis/`: analysis, training and audit scripts retained for provenance.
 - `configs/`: cultivar, trait and model registries.
-- `evidence/`: frozen predictions, metric tables, figure source data and audit outputs.
-- `paper/`: anonymous manuscript sources and six main figures.
+- `docs/Figure_1.png`: authorised study-design and cohort figure.
+- `docs/Figure_3.png`: authorised model-architecture figure.
+- `evidence/`: frozen predictions, metric tables and audit outputs.
 - `tools/audit_release.py`: repository integrity and privacy audit.
 - `tests/`: clean-environment checks for the frozen evidence.
 
-Related private repositories:
+Manuscript files, all other publication figures and figure-specific source data are
+intentionally excluded. Figures 1 and 3 are the only manuscript-derived images
+authorised for this repository.
+
+Related public repositories:
 
 - [`PlumSPECTRA-data`](https://github.com/707728642li/PlumSPECTRA-data): analysis-ready spectra, phenotypes, folds and prediction records.
 - [`PlumSPECTRA-models`](https://github.com/707728642li/PlumSPECTRA-models): model card, configuration registry and deployment-weight release status.
@@ -63,18 +61,18 @@ pytest -q
 ```
 
 The check recomputes file hashes, cohort sizes and selected headline metrics. It does
-not retrain the neural networks. Full retraining requires the private analysis-ready
+not retrain the neural networks. Full retraining requires the public analysis-ready
 dataset and substantial GPU time.
 
 ## Data, model and code availability
 
-The private data repository contains a path-free analysis table and the frozen OOF
+The public data repository contains a path-free analysis table and the frozen OOF
 predictions. Raw ARC archives and instrument exports are not copied into Git history.
 The model repository does not mislabel the older nine-trait production bundle as the
 paper's final 12-trait system; final refit weights remain a release blocker.
 
 ## Citation and license
 
-The final author list, public licenses and version DOI will be added after author and
-institutional confirmation. Until then, all three repositories remain private and
-all rights are reserved.
+The version DOI and public reuse licenses will be added after institutional
+confirmation. Repository access is public, but reuse rights remain reserved until
+the corresponding license files are issued.

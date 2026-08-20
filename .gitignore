@@ -19,3 +19,21 @@ Thumbs.db
 *.pfx
 credentials*
 secrets*
+
+# Publication sources and rendered paper assets stay outside GitHub.
+paper/
+evidence/figure_data/
+evidence/final_revision/a11y_supplement.json
+evidence/final_revision/docx_supplement_layout_final.json
+evidence/final_revision/supplement_key_tables.md
+analysis/*figure*.py
+analysis/*figures*.py
+analysis/*figures*.R
+analysis/*manuscript*.py
+analysis/*supplement*.py
+analysis/build_hr_cover_letter.py
+analysis/v26_visual_integration/build_all.R
+analysis/v26_visual_integration/plot_*.R
+analysis/v26_visual_integration/plum_figstyle.R
+analysis/v26_visual_integration/prepare_*.py
+analysis/v28_submission_strengthening/plot_supplementary_figure_s25.R
